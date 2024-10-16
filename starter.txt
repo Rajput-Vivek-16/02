@@ -1,0 +1,12 @@
+npm init
+npm i express
+npm i dotenv
+touch server.js to create file
+
+add type: commonjs(require) or modulejs(import)
+
+Frontend
+npm create vite@latest . [by using dot we create all file in existing folder] 
+
+for fetching here we use axios
+npm i axios
