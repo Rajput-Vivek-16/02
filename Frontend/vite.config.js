@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://zero2-j8si.onrender.com',
+        target: 'https://zero2-0kk9.onrender.com',
         changeOrigin: true,
         secure: false,
       },
