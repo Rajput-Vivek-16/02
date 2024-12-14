@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios'
 
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 function App() {
   const [infos, setInfos] = useState([])
   useEffect(()=>{
@@ -12,7 +13,7 @@ function App() {
     .catch((error)=>{
       console.log(error);
     })
-  })
+  }, [])
   return (
     <>  
       <h1>Connecting frontend and backend</h1>
