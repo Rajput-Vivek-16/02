@@ -8,9 +8,15 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT||3000;
 
 // app.use(express.static('dist'));
+
+import cors from 'cors';
+app.use(cors({
+    origin: process.env.CORS_ORIGIN,
+    credentials: true
+}));
 
 const data = [
     {
